@@ -9,6 +9,13 @@ class Animal
         std::string m_breed;
         std::string m_feed;
         std::string m_sound;
+	
+	// Քանի որ toFeed ու makeSound ֆունկցիաները բոլոր ժառանգների համար ընդհանուր են,
+	// Նրանց նույնպես լավ կլինի հայտարարել Animal֊ում
+	
+	//public:
+	// 	virtual void toFeed();
+	// 	virtual void makeSound();
 };
 
 class Dog : public Animal 
